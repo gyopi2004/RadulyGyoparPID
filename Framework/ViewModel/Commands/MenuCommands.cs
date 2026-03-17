@@ -620,42 +620,42 @@ namespace Framework.ViewModel
         }
         #endregion
 
-#region Histogram Equalization
-private ICommand _histogramEqualizationCommand;
-public ICommand HistogramEqualizationCommand
-{
-    get
-    {
-        if (_histogramEqualizationCommand == null)
-            _histogramEqualizationCommand = new RelayCommand(HistogramEqualization);
-        return _histogramEqualizationCommand;
-    }
-}
+//#region Histogram Equalization
+//private ICommand _histogramEqualizationCommand;
+//public ICommand HistogramEqualizationCommand
+//{
+//    get
+//    {
+//        if (_histogramEqualizationCommand == null)
+//            _histogramEqualizationCommand = new RelayCommand(HistogramEqualization);
+//        return _histogramEqualizationCommand;
+//    }
+//}
 
-private void HistogramEqualization(object parameter)
-{
-    if (InitialImage == null)
-    {
-        MessageBox.Show("Please add an image!");
-        return;
-    }
+//private void HistogramEqualization(object parameter)
+//{
+//    if (InitialImage == null)
+//    {
+//        MessageBox.Show("Please add an image!");
+//        return;
+//    }
 
 
-    ClearProcessedCanvas(parameter as Canvas);
+//    ClearProcessedCanvas(parameter as Canvas);
 
-    if (GrayInitialImage != null)
-    {
+//    if (GrayInitialImage != null)
+//    {
 
-        GrayProcessedImage = Tools.HistogramEqualization(GrayInitialImage);
-        ProcessedImage = Convert(GrayProcessedImage);
-    }
-    else if (ColorInitialImage != null)
-    {
+//        GrayProcessedImage = Tools.HistogramEqualization(GrayInitialImage);
+//        ProcessedImage = Convert(GrayProcessedImage);
+//    }
+//    else if (ColorInitialImage != null)
+//    {
 
-        GrayProcessedImage = Tools.Convert(ColorInitialImage);
-        GrayProcessedImage = Tools.HistogramEqualization(GrayProcessedImage);
-        ProcessedImage = Convert(GrayProcessedImage);
-    }
+//        GrayProcessedImage = Tools.Convert(ColorInitialImage);
+//        GrayProcessedImage = Tools.HistogramEqualization(GrayProcessedImage);
+//        ProcessedImage = Convert(GrayProcessedImage);
+//    }
 
         #region Convert color image to grayscale image
         private ICommand _convertImageToGrayscaleCommand;
@@ -694,7 +694,7 @@ private void HistogramEqualization(object parameter)
         #region Pointwise operations
         #endregion
 
-        //#region Histogram Equalization
+        #region Histogram Equalization
         //private ICommand _histogramEqualizationCommand;
         //public ICommand HistogramEqualizationCommand
         //{
@@ -730,7 +730,7 @@ private void HistogramEqualization(object parameter)
         //        GrayProcessedImage = Tools.HistogramEqualization(GrayProcessedImage);
         //        ProcessedImage = Convert(GrayProcessedImage);
         //    }
-        //    #endregion
+            #endregion
 
         #region Thresholding
         private ICommand _otsuTreshHolding;
@@ -821,10 +821,12 @@ private void HistogramEqualization(object parameter)
             }
             else if (ColorInitialImage != null)
             {
+                ColorProcessedImage = Filters.ApplyFilter(ColorInitialImage, kernel);
                 ProcessedImage = Convert(GrayProcessedImage);
             }
         }
         #endregion
+
         #endregion
 
         #region Morphological operations

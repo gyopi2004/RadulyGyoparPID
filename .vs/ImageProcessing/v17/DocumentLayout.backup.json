@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\PID\\RadulyGyoparPID\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\PID\\RadulyGyoparPID\\framework\\viewmodel\\commands\\menucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|C:\\PID\\RadulyGyoparPID\\algorithms\\sections\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\sections\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|c:\\pid\\radulygyoparpid\\framework\\viewmodel\\commands\\menucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|solutionrelative:framework\\viewmodel\\commands\\menucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,15 +15,11 @@
       "RelativeMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|solutionrelative:framework\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|c:\\pid\\radulygyoparpid\\algorithms\\sections\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\sections\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|c:\\pid\\radulygyoparpid\\algorithms\\utilities\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|C:\\PID\\RadulyGyoparPID\\algorithms\\utilities\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\utilities\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|c:\\pid\\radulygyoparpid\\algorithms\\sections\\thresholding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|C:\\PID\\RadulyGyoparPID\\algorithms\\sections\\thresholding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\sections\\thresholding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -46,22 +46,21 @@
               "Title": "Utils.cs",
               "DocumentMoniker": "C:\\PID\\RadulyGyoparPID\\Algorithms\\Utilities\\Utils.cs",
               "RelativeDocumentMoniker": "Algorithms\\Utilities\\Utils.cs",
-              "ToolTip": "C:\\PID\\RadulyGyoparPID\\Algorithms\\Utilities\\Utils.cs*",
-              "RelativeToolTip": "Algorithms\\Utilities\\Utils.cs*",
+              "ToolTip": "C:\\PID\\RadulyGyoparPID\\Algorithms\\Utilities\\Utils.cs",
+              "RelativeToolTip": "Algorithms\\Utilities\\Utils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T12:44:31.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-17T12:44:31.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Filters.cs",
               "DocumentMoniker": "C:\\PID\\RadulyGyoparPID\\Algorithms\\Sections\\Filters.cs",
               "RelativeDocumentMoniker": "Algorithms\\Sections\\Filters.cs",
-              "ToolTip": "C:\\PID\\RadulyGyoparPID\\Algorithms\\Sections\\Filters.cs*",
-              "RelativeToolTip": "Algorithms\\Sections\\Filters.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAA8AAAAAAAAAA==",
+              "ToolTip": "C:\\PID\\RadulyGyoparPID\\Algorithms\\Sections\\Filters.cs",
+              "RelativeToolTip": "Algorithms\\Sections\\Filters.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAD4AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-17T12:20:20.783Z",
               "EditorCaption": ""
@@ -76,30 +75,28 @@
               "RelativeToolTip": "Algorithms\\Sections\\Thresholding.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T12:26:22.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T12:26:22.614Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\PID\\RadulyGyoparPID\\Framework\\View\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Framework\\View\\MainWindow.xaml",
               "ToolTip": "C:\\PID\\RadulyGyoparPID\\Framework\\View\\MainWindow.xaml",
               "RelativeToolTip": "Framework\\View\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-10T12:22:46.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T12:22:46.737Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MenuCommands.cs",
               "DocumentMoniker": "C:\\PID\\RadulyGyoparPID\\Framework\\ViewModel\\Commands\\MenuCommands.cs",
               "RelativeDocumentMoniker": "Framework\\ViewModel\\Commands\\MenuCommands.cs",
-              "ToolTip": "C:\\PID\\RadulyGyoparPID\\Framework\\ViewModel\\Commands\\MenuCommands.cs*",
-              "RelativeToolTip": "Framework\\ViewModel\\Commands\\MenuCommands.cs*",
-              "ViewState": "AgIAAP0CAAAAAAAAAAAAABEDAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\PID\\RadulyGyoparPID\\Framework\\ViewModel\\Commands\\MenuCommands.cs",
+              "RelativeToolTip": "Framework\\ViewModel\\Commands\\MenuCommands.cs",
+              "ViewState": "AgIAACEDAAAAAAAAAAAAAD0DAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T12:49:05.181Z",
               "EditorCaption": ""
