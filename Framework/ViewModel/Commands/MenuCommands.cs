@@ -341,7 +341,7 @@ namespace Framework.ViewModel
         }
         #endregion
 
-        #region Brightness&Contrast
+            #region Brightness&Contrast
         private ICommand _linearImageCommand;
         public ICommand LinearImageCommand
         {
@@ -657,10 +657,137 @@ namespace Framework.ViewModel
         #region Pointwise operations
         #endregion
 
+        //#region Histogram Equalization
+        //private ICommand _histogramEqualizationCommand;
+        //public ICommand HistogramEqualizationCommand
+        //{
+        //    get
+        //    {
+        //        if (_histogramEqualizationCommand == null)
+        //            _histogramEqualizationCommand = new RelayCommand(HistogramEqualization);
+        //        return _histogramEqualizationCommand;
+        //    }
+        //}
+
+        //private void HistogramEqualization(object parameter)
+        //{
+        //    if (InitialImage == null)
+        //    {
+        //        MessageBox.Show("Please add an image!");
+        //        return;
+        //    }
+
+
+        //    ClearProcessedCanvas(parameter as Canvas);
+
+        //    if (GrayInitialImage != null)
+        //    {
+
+        //        GrayProcessedImage = Tools.HistogramEqualization(GrayInitialImage);
+        //        ProcessedImage = Convert(GrayProcessedImage);
+        //    }
+        //    else if (ColorInitialImage != null)
+        //    {
+
+        //        GrayProcessedImage = Tools.Convert(ColorInitialImage);
+        //        GrayProcessedImage = Tools.HistogramEqualization(GrayProcessedImage);
+        //        ProcessedImage = Convert(GrayProcessedImage);
+        //    }
+        //    #endregion
+
         #region Thresholding
+        private ICommand _otsuTreshHolding;
+        public ICommand OtsuTreshHolding
+        {
+            get
+            {
+                if (_otsuTreshHolding == null)
+                    _otsuTreshHolding = new RelayCommand(BinaryImage);
+                return _otsuTreshHolding;
+            }
+        }
+
+        private void OtsuTreshold(object parameter)
+        {
+            if (InitialImage == null)
+            {
+                MessageBox.Show("Please add an image!");
+                return;
+            }
+
+            ClearProcessedCanvas(parameter as Canvas);
+            List<string> labels = new List<string>
+            {
+                "Thresholding: ",
+            };
+
+            DialogWindow window = new DialogWindow(_mainVM, labels);
+            window.ShowDialog();
+
+            List<double> values = window.GetValues();
+
+            if (values[0] < 10 || values[0] > 145)
+            {
+                MessageBox.Show("Threshold value must be between 10 and 145");
+                return;
+            }
+            byte T = (byte)values[0];
+
+            //byte T = 120;
+            if (GrayInitialImage != null)
+            {
+                GrayProcessedImage = Tools.BinaryIm(GrayInitialImage, T);
+                ProcessedImage = Convert(GrayProcessedImage);
+            }
+            else if (ColorInitialImage != null)
+            {
+                GrayProcessedImage = Tools.Convert(ColorInitialImage);
+                GrayProcessedImage = Tools.BinaryIm(GrayProcessedImage, T);
+                ProcessedImage = Convert(GrayProcessedImage);
+            }
+        }
         #endregion
 
         #region Filters
+
+        #region Custom filter
+        private ICommand _customFilterCommand;
+        public ICommand CustomFilterCommand
+        {
+            get
+            {
+                if (_customFilterCommand == null)
+                    _customFilterCommand = new RelayCommand(CustomFilter);
+                return _customFilterCommand;
+            }
+        }
+
+        private void CustomFilter(object parameter)
+        {
+            if (InitialImage == null)
+            {
+                MessageBox.Show("Please add an image!");
+                return;
+            }
+
+            ClearProcessedCanvas(parameter as Canvas);
+            double[,] kernel = new double[3, 3]
+            {
+                {0.1,0.1,0.1 },
+                {0.1,0.1,0.1 },
+                {0.1,0.1,0.1 }
+            };
+            if (GrayInitialImage != null)
+            {
+                GrayProcessedImage = Filters.ApplyFilter(GrayInitialImage, kernel);
+                ProcessedImage = Convert(GrayProcessedImage);
+            }
+            else if (ColorInitialImage != null)
+            {
+                ProcessedImage = Convert(GrayProcessedImage);
+            }
+        }
+        #endregion
         #endregion
 
         #region Morphological operations

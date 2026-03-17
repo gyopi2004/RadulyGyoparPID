@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VbTBqLx4Z/E=",
+  "dgSpecHash": "xYIKbZgp3TY=",
   "success": true,
-  "projectFilePath": "C:\\PID\\Framework\\Framework.csproj",
+  "projectFilePath": "C:\\PID\\RadulyGyoparPID\\Framework\\Framework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gyopi Raduly\\.nuget\\packages\\emgucv\\3.1.0.1\\emgucv.3.1.0.1.nupkg.sha512",
     "C:\\Users\\Gyopi Raduly\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",

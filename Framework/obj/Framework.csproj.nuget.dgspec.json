@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PID\\Framework\\Framework.csproj": {}
+    "C:\\PID\\RadulyGyoparPID\\Framework\\Framework.csproj": {}
   },
   "projects": {
-    "C:\\PID\\Algorithms\\Algorithms.csproj": {
+    "C:\\PID\\RadulyGyoparPID\\Algorithms\\Algorithms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PID\\Algorithms\\Algorithms.csproj",
+        "projectUniqueName": "C:\\PID\\RadulyGyoparPID\\Algorithms\\Algorithms.csproj",
         "projectName": "Algorithms",
-        "projectPath": "C:\\PID\\Algorithms\\Algorithms.csproj",
+        "projectPath": "C:\\PID\\RadulyGyoparPID\\Algorithms\\Algorithms.csproj",
         "packagesPath": "C:\\Users\\Gyopi Raduly\\.nuget\\packages\\",
-        "outputPath": "C:\\PID\\Algorithms\\obj\\",
+        "outputPath": "C:\\PID\\RadulyGyoparPID\\Algorithms\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "UsingMicrosoftNETSdk": false,
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\PID\\Framework\\Framework.csproj": {
+    "C:\\PID\\RadulyGyoparPID\\Framework\\Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PID\\Framework\\Framework.csproj",
+        "projectUniqueName": "C:\\PID\\RadulyGyoparPID\\Framework\\Framework.csproj",
         "projectName": "Framework",
-        "projectPath": "C:\\PID\\Framework\\Framework.csproj",
+        "projectPath": "C:\\PID\\RadulyGyoparPID\\Framework\\Framework.csproj",
         "packagesPath": "C:\\Users\\Gyopi Raduly\\.nuget\\packages\\",
-        "outputPath": "C:\\PID\\Framework\\obj\\",
+        "outputPath": "C:\\PID\\RadulyGyoparPID\\Framework\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "UsingMicrosoftNETSdk": false,
@@ -95,8 +95,8 @@
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\PID\\Algorithms\\Algorithms.csproj": {
-                "projectPath": "C:\\PID\\Algorithms\\Algorithms.csproj"
+              "C:\\PID\\RadulyGyoparPID\\Algorithms\\Algorithms.csproj": {
+                "projectPath": "C:\\PID\\RadulyGyoparPID\\Algorithms\\Algorithms.csproj"
               }
             }
           }

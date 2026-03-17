@@ -1850,11 +1850,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PID\\Framework\\Framework.csproj",
+      "projectUniqueName": "C:\\PID\\RadulyGyoparPID\\Framework\\Framework.csproj",
       "projectName": "Framework",
-      "projectPath": "C:\\PID\\Framework\\Framework.csproj",
+      "projectPath": "C:\\PID\\RadulyGyoparPID\\Framework\\Framework.csproj",
       "packagesPath": "C:\\Users\\Gyopi Raduly\\.nuget\\packages\\",
-      "outputPath": "C:\\PID\\Framework\\obj\\",
+      "outputPath": "C:\\PID\\RadulyGyoparPID\\Framework\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
@@ -1876,8 +1876,8 @@
       "frameworks": {
         "net48": {
           "projectReferences": {
-            "C:\\PID\\Algorithms\\Algorithms.csproj": {
-              "projectPath": "C:\\PID\\Algorithms\\Algorithms.csproj"
+            "C:\\PID\\RadulyGyoparPID\\Algorithms\\Algorithms.csproj": {
+              "projectPath": "C:\\PID\\RadulyGyoparPID\\Algorithms\\Algorithms.csproj"
             }
           }
         }

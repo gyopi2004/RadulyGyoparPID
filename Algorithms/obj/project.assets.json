@@ -519,11 +519,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PID\\Algorithms\\Algorithms.csproj",
+      "projectUniqueName": "C:\\PID\\RadulyGyoparPID\\Algorithms\\Algorithms.csproj",
       "projectName": "Algorithms",
-      "projectPath": "C:\\PID\\Algorithms\\Algorithms.csproj",
+      "projectPath": "C:\\PID\\RadulyGyoparPID\\Algorithms\\Algorithms.csproj",
       "packagesPath": "C:\\Users\\Gyopi Raduly\\.nuget\\packages\\",
-      "outputPath": "C:\\PID\\Algorithms\\obj\\",
+      "outputPath": "C:\\PID\\RadulyGyoparPID\\Algorithms\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,

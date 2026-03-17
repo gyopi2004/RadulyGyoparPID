@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\PID\Framework\obj\Debug\
+C:\PID\RadulyGyoparPID\Framework\obj\Debug\
 Framework
 none
 false
 DEBUG;TRACE
-C:\PID\Framework\App.xaml
+C:\PID\RadulyGyoparPID\Framework\App.xaml
 7-80356701
 
 36-1902036014
-1332100581632
+1331634326418
 View\HistogramWindow.xaml;View\MainWindow.xaml;View\DialogWindow.xaml;View\GraphWindow.xaml;View\MagnifierWindow.xaml;View\ColorLevelsWindow.xaml;View\SliderWindow.xaml;
 
 True

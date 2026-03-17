@@ -36,7 +36,7 @@ namespace Algorithms.Utilities
         }
         #endregion
 
-        public static byte Clamp(float x)
+        public static byte Clamp(double x)
         {
             if (x < 0)
             {
