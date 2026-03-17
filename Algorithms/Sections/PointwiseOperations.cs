@@ -70,6 +70,88 @@ namespace Algorithms.Sections
                 return result;
             
         }
+        public static Image<Gray, byte> HistogramEqualization(Image<Gray, byte> inputImage, byte[] lut)
+{
+    int width = inputImage.Width;
+    int height = inputImage.Height;
+    int totalPixels = width * height;
+
+    int[] histogram = new int[256];
+    for (int y = 0; y < height; y++)
+    {
+        for (int x = 0; x < width; x++)
+        {
+            byte pixel = inputImage.Data[y, x, 0];
+            histogram[pixel]++;
+        }
+    }
+
+    int[] cdf = new int[256];
+    cdf[0] = histogram[0];
+    for (int i = 1; i < 256; i++)
+        cdf[i] = cdf[i - 1] + histogram[i];
+
+    int cdfMin = 0;
+    for (int i = 0; i < 256; i++)
+    {
+        if (cdf[i] != 0)
+        {
+            cdfMin = cdf[i];
+            break;
+        }
+    }
+
+    byte[] lut = new byte[256];
+    for (int i = 0; i < 256; i++)
+        lut[i] = (byte)Math.Round((double)(cdf[i] - cdfMin) / (totalPixels - cdfMin) * 255);
+
+    return PointwiseOperations.ApplyLut(inputImage, lut);
+}
+
+public static Image<Bgr, byte> HistogramEqualization(Image<Bgr, byte> inputImage, byte[] lut)
+{
+    int width = inputImage.Width;
+    int height = inputImage.Height;
+
+    Image<Bgr, byte> result = inputImage.Clone();
+
+    for (int c = 0; c < 3; c++) 
+    {
+       
+        int[] histogram = new int[256];
+        for (int y = 0; y < height; y++)
+            for (int x = 0; x < width; x++)
+                histogram[inputImage.Data[y, x, c]]++;
+
+        int[] cdf = new int[256];
+        cdf[0] = histogram[0];
+        for (int i = 1; i < 256; i++)
+            cdf[i] = cdf[i - 1] + histogram[i];
+
+        int cdfMin = 0;
+        for (int i = 0; i < 256; i++)
+        {
+            if (cdf[i] != 0)
+            {
+                cdfMin = cdf[i];
+                break;
+            }
+        }
+
+        int totalPixels = width * height;
+        byte[] lut = new byte[256];
+        for (int i = 0; i < 256; i++)
+            lut[i] = (byte)Math.Round((double)(cdf[i] - cdfMin) / (totalPixels - cdfMin) * 255);
+
+        for (int y = 0; y < height; y++)
+            for (int x = 0; x < width; x++)
+                result.Data[y, x, c] = lut[inputImage.Data[y, x, c]];
+    }
+
+    return result;
+
+}
+    }
 
         //public static Image<Gray, byte> HistogramEqualization(Image<Gray, byte> inputImage, byte[] lut)
         //{
