@@ -101,7 +101,7 @@ namespace Algorithms.Sections
         }
     }
 
-    byte[] lut = new byte[256];
+    byte[] lut1 = new byte[256];
     for (int i = 0; i < 256; i++)
         lut[i] = (byte)Math.Round((double)(cdf[i] - cdfMin) / (totalPixels - cdfMin) * 255);
 
@@ -139,7 +139,7 @@ public static Image<Bgr, byte> HistogramEqualization(Image<Bgr, byte> inputImage
         }
 
         int totalPixels = width * height;
-        byte[] lut = new byte[256];
+        byte[] lut1 = new byte[256];
         for (int i = 0; i < 256; i++)
             lut[i] = (byte)Math.Round((double)(cdf[i] - cdfMin) / (totalPixels - cdfMin) * 255);
 
@@ -237,4 +237,4 @@ public static Image<Bgr, byte> HistogramEqualization(Image<Bgr, byte> inputImage
 
 
     }
-}
+
