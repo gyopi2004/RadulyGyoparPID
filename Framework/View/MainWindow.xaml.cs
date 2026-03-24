@@ -159,5 +159,17 @@ namespace Framework.View
             Properties.Settings.Default.Theme = selectedTheme;
             Properties.Settings.Default.Save();
         }
-    }
+
+        private void LowPassMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            double teta = 1.0;
+
+            if (initialImage != null)
+            {
+               // var result = Algorithms.Sections.Filters.GaussFiltering(initialImage, teta);
+
+            }
+        
+        }
+        }
 }

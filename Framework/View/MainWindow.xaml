@@ -190,8 +190,8 @@
                       Background="{Binding Path=Theme.MenuItemBackgroundColor}"
                       Foreground="{Binding Path=Theme.MenuItemForegroundColor}">
                 <MenuItem Header="Low-pass"
-                          Foreground="#1E1E1E">
-
+                          Foreground="#1E1E1E"
+                    Click="LowPassMenuItem_Click">
                 </MenuItem>
                 <MenuItem Header="High-pass"
                           Foreground="#1E1E1E">
